@@ -19,7 +19,7 @@ Usage
 
     .. code-block:: python
 
-        """__main__.py"""
+        """../example/__main__.py"""
 
         import pycli.cli as pycli
         prog = pycli.Cli(description="A sample program")
@@ -28,7 +28,7 @@ Usage
 
     .. code-block:: python
 
-        """__main__.py (cont.)"""
+        """../example/__main__.py (cont.)"""
 
         @prog.register(
             [pycli.argument('--argument', '-a', action='store_true')]
@@ -40,7 +40,7 @@ Usage
 
     .. code-block:: python
 
-        """__main__.py (cont.)"""
+        """../example/__main__.py (cont.)"""
 
         if __name__ == '__main__':
             prog()
@@ -51,7 +51,7 @@ Usage
 
         # Using Poetry in pyproject.toml
         [tool.poetry.scripts]
-            command = "example.__main__:my_command"
+        command = "example.__main__:my_command"
 
 
 

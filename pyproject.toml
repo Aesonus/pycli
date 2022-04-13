@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pycli"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "A package for easy command line argument parsing"
 authors = ["Cory Laughlin <corylcomposinger@gmail.com>"]
 
 [tool.poetry.dependencies]
